@@ -31,3 +31,4 @@ config/secrets.yml
 bower.json
 *.swp
 *.swo
+config/application.yml
