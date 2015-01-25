@@ -1,3 +1,4 @@
+ruby '2.2.0'
 source 'https://rubygems.org'
 
 
@@ -37,6 +38,7 @@ gem 'figaro'
 
 group :production do
   gem 'puma'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
