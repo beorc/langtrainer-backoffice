@@ -139,6 +139,8 @@ GEM
     pg (0.18.1)
     polyamorous (1.1.0)
       activerecord (>= 3.0)
+    puma (2.10.2)
+      rack (>= 1.1, < 2.0)
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -225,6 +227,7 @@ DEPENDENCIES
   jquery-rails
   langtrainer_orm_activerecord!
   pg
+  puma
   rails (= 4.2.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
