@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/beorc/langtrainer_orm_activerecord.git
-  revision: eb67d5831f314cfe135df4803522e1b686ca9759
+  revision: b8dd203dee6ce1162ac3f7debfdb252fab390ff3
   branch: master
   specs:
     langtrainer_orm_activerecord (0.0.1)
