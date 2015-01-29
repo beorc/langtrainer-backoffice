@@ -34,7 +34,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 gem 'langtrainer_orm_activerecord', github: 'beorc/langtrainer_orm_activerecord', branch: 'master'
-gem 'figaro'
 
 group :production do
   gem 'puma'
@@ -42,6 +41,8 @@ group :production do
 end
 
 group :development, :test do
+  gem 'figaro'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
