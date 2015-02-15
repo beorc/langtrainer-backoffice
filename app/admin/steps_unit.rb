@@ -22,6 +22,18 @@ ActiveAdmin.register StepsUnit do
     f.actions
   end
 
+  index do
+    selectable_column
+    column :step
+    column :unit
+    column :position
+    column :from_en
+    column :to_en
+    column :from_ru
+    column :to_ru
+    actions
+  end
+
   action_item :new, only: :show do
    link_to I18n.t('active_admin.new_model', model: active_admin_config.resource_label), new_resource_path
   end

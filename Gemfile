@@ -33,7 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
-gem 'langtrainer_orm_activerecord', github: 'beorc/langtrainer_orm_activerecord', branch: 'master'
+gem 'langtrainer_orm_activerecord', github: 'langtrainer/langtrainer_orm_activerecord', branch: 'master'
 
 group :production do
   gem 'puma'

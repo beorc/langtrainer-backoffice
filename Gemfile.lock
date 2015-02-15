@@ -17,8 +17,8 @@ GIT
       sass-rails
 
 GIT
-  remote: git://github.com/beorc/langtrainer_orm_activerecord.git
-  revision: c25bf96a08884e1a1a21efbadca801db99147ea5
+  remote: git://github.com/langtrainer/langtrainer_orm_activerecord.git
+  revision: 3bad3a01f57a6d35250d4f65c7de0f17e14fa6a5
   branch: master
   specs:
     langtrainer_orm_activerecord (0.0.1)
