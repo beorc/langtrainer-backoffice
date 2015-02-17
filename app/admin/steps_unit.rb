@@ -24,7 +24,9 @@ ActiveAdmin.register StepsUnit do
 
   index do
     selectable_column
-    column :step
+    column :step do |model|
+      "#{model.step.id}: #{model.step.title}"
+    end
     column :unit
     column :position
     column :from_en
