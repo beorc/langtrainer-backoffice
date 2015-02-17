@@ -11,8 +11,8 @@ ActiveAdmin.register StepsUnit do
 
   form do |f|
     f.inputs "Unit Details" do
-      f.input :step, as: :select, collection: Step.all.map { |m| [m.title, m.id] }
-      f.input :unit, as: :select, collection: Unit.all.map { |m| [m.slug, m.id] }
+      f.input :step, as: :select, collection: Step.all.order('id DESC').map { |m| [m.title, m.id] }, selected: Step.last.id
+      f.input :unit, as: :select, collection: Unit.all.order('id DESC').map { |m| [m.slug, m.id] }, selected: Unit.last.id
       f.input :position
       f.input :from_en
       f.input :to_en
