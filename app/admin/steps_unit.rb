@@ -11,8 +11,13 @@ ActiveAdmin.register StepsUnit do
 
   form do |f|
     f.inputs "Unit Details" do
-      f.input :step, as: :select, collection: Step.all.order('id DESC').map { |m| [m.to_s, m.id] }, selected: Step.last.id
-      f.input :unit, as: :select, collection: Unit.all.order('id DESC').map { |m| [m.to_s, m.id] }, selected: Unit.last.id
+      if f.object.new_record?
+        f.input :step, as: :select, collection: Step.all.order('id DESC').map { |m| [m.to_s, m.id] }, selected: Step.last.id
+        f.input :unit, as: :select, collection: Unit.all.order('id DESC').map { |m| [m.to_s, m.id] }, selected: Unit.last.id
+      else
+        f.input :step, as: :select, collection: Step.all.order('id DESC').map { |m| [m.to_s, m.id] }
+        f.input :unit, as: :select, collection: Unit.all.order('id DESC').map { |m| [m.to_s, m.id] }
+      end
       f.input :position
       f.input :from_en
       f.input :to_en
@@ -24,6 +29,7 @@ ActiveAdmin.register StepsUnit do
 
   index do
     selectable_column
+    column :id
     column :step do |model|
       "#{model.step.id}: #{model.step.title}"
     end
