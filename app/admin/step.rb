@@ -19,11 +19,17 @@ ActiveAdmin.register Step do
         step.question(:ru).html_safe
       end
       row :ru_help
+      row :ru_help_view do
+        step.ru_help.html_safe
+      end
       row :en_question
       row :en_question_view do
         step.question(:en).html_safe
       end
       row :en_help
+      row :en_help_view do
+        step.en_help.html_safe
+      end
     end
     active_admin_comments
   end
