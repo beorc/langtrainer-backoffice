@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: git://github.com/langtrainer/langtrainer_orm_activerecord.git
-  revision: 2a20327e4348c0ce169bd71bbf08e87126aab6eb
+  revision: 0c59b6149aa2b0099d678e61f4a762d5f01af6ec
   branch: master
   specs:
     langtrainer_orm_activerecord (0.0.1)
@@ -133,6 +133,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
+    newrelic_rpm (3.10.0.279)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -231,6 +232,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   langtrainer_orm_activerecord!
+  newrelic_rpm
   pg
   puma
   rails (= 4.2.0)

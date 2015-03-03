@@ -38,6 +38,7 @@ gem 'langtrainer_orm_activerecord', github: 'langtrainer/langtrainer_orm_activer
 group :production do
   gem 'puma'
   gem 'rails_12factor'
+  gem 'newrelic_rpm'
 end
 
 group :development, :test do
